@@ -23,7 +23,7 @@ function Hero() {
           <h2 className="text-2xl font-bold mb-4 text-gray-800">
             Book Your Stay
           </h2>
-          <form className="space-y-4">
+          <form className="space-y-4 text-gray-800">
             <div>
               <label
                 for="destination"
