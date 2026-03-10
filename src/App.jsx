@@ -10,7 +10,7 @@ function App() {
     <>
       {!isDashboard && <NavBar />}
 
-      <div className="min-h-[70vh]">
+      <div className="min-h-[70vh] ">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

@@ -6,10 +6,16 @@
   font-family: Outfit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 button {
   background: #e89755;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 17px;
   color: white;
   width: 160px;
   font-size: 17px;
@@ -19,4 +25,8 @@ button {
 }
 button:hover {
   background: #c47331;
+}
+
+.cl-internal-1pvs5zb {
+  width: 100% !important;
 }

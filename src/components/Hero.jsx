@@ -5,9 +5,10 @@ function Hero() {
 
   return (
     <div className='relative flex flex-col items-center justify-center p-10 text-white bg-[url("/src/assets/hotel_3.jpg")] bg-no-repeat bg-cover bg-center h-screen'>
+   
       <div className="absolute inset-0 bg-black opacity-60"></div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 text-center p-6 mt-50 sm:p-6 sm:mt-20"> {/* Added padding top for the fixed nav */}
         <div className="text-center m-6">
             <h2 className="text-[#e89755] text-4xl mb-3 font-bold">
           Find Your Perfect Stay, Anywhere
