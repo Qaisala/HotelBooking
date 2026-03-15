@@ -174,7 +174,7 @@ function AllHotels() {
           <p>FILTERS</p>
           <div>
             <span
-              className="lg:hidden"
+              className="lg:hidden cursor-pointer"
               onClick={() => setOpenFilter(!openFilter)}
             >
               {openFilter ? "Hide" : "Show"}
