@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { useClerk, useUser, UserButton } from "@clerk/react";
 import { useNavigate } from "react-router-dom";
-import { useLocation} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { FaBook } from "react-icons/fa";
 
 function NavBar() {
@@ -23,7 +23,7 @@ function NavBar() {
 
   React.useEffect(() => {
     const handleScroll = () => {
-      if (location.pathname === '/') {
+      if (location.pathname === "/") {
         setIsScrolled(window.scrollY > 10);
       } else {
         setIsScrolled(true);
@@ -64,6 +64,7 @@ function NavBar() {
 
         {user && (
           <button
+            onClick={() => navigate("/dashboard")}
             className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? "text-black" : "text-white"} transition-all`}
           >
             Dashboard
@@ -83,7 +84,7 @@ function NavBar() {
           <circle cx="11" cy="11" r="8" />
           <line x1="21" y1="21" x2="16.65" y2="16.65" />
         </svg>
-  
+
         {user ? (
           <UserButton>
             <UserButton.MenuItems>
