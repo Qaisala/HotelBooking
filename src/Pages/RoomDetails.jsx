@@ -55,7 +55,7 @@ function RoomDetails() {
         </div>
       </div>
 
-      {/*  */}
+      {/* Google Maps */}
       <div className="mt-10">
         <h2 className="text-xl font-semibold mb-2">Location</h2>
         <iframe
